@@ -1,0 +1,361 @@
+/*--------------------------------------FONTS----------------------------------------------------*/
+
+@font-face {
+    font-family: "OldNewsPaper" ;
+    src: url(../fonts/OldNewspaperTypes.ttf) format("truetype");
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "LazerGameZone" ;
+    src: url(../fonts/Lazer\ Game\ Zone.ttf) format("truetype");
+    font-size: normal;
+    font-weight: normal;
+}
+
+/*----------------------------------FONDO--------------------------------------------------------*/
+
+
+body{
+    background-image: url(../media/fondo.jpg);
+    background-size: 1470px 750px;
+}
+
+#contenedor_invisible{
+   
+    width: 1415px;
+    height: 733px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----------------------------------PRINCIPAL-----------------------------------------------------*/
+
+#principal{
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    border: 2px solid black ;
+    border-radius: 25px 25px 25px 25px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+#titulo{
+    font-family: "LazerGameZone";
+    font-size: 60px;
+    height: 20px;
+    grid-column: 1/span 2;
+}
+
+#seleccionador{
+    /* background-color: black;  */
+    height: 360px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+#anidador{
+    /* background-color: beige; */
+    height: 360px;
+    display:grid;
+    border-left: 1px black solid;
+}
+
+
+
+/*-----------------------------------DIV PARA SELECCIONAR TAREA----------------------------------*/
+
+
+
+
+#seleccionador_tarea{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 20px;
+}
+
+#otro{
+    width: 90px;
+    height: 35px;
+    background-color: rgb(5, 165, 234);
+    border-radius: 20px 20px 20px 20px;
+    border:black 2px solid;
+    color:black;
+    font-family: "OldNewsPaper";
+    font-size: 20px;
+    align-self: center;
+    cursor:pointer;
+
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+#tarea{
+    width: 250px;
+    height: 20px;
+    font-family: "OldNewsPaper";
+    font-size: 12px;
+    border: black 2px solid;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+    background-color: aliceblue;
+    align-self: center; 
+    order:3;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+#aceptar_tarea{
+    width: 100px;
+    height: 30px;
+    font-family: "OldNewsPaper";
+    font-size: 14px;
+    color: black;
+    border: 2px black solid;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(31, 243, 3);
+    align-self: flex-end;
+    order:1;
+    cursor:pointer;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+#cancelar_tarea{
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    width: 100px;
+    height: 30px;
+    font-family: "OldNewsPaper";
+    font-size: 14px;
+    color: black;
+    border: 2px black solid;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(255, 61, 61);
+    align-self: flex-end;
+    order:2;
+    cursor:pointer
+}
+/*---------------------------------------------DIV PARA SELECCIONAR MATERIA---------------------------------------*/
+
+
+#seleccionador_materia{
+    display:flex;
+    flex-wrap: wrap-reverse;
+justify-content: center;
+    gap:25px;
+}
+#color_materia{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 30px;
+    width: 25px;
+    margin:0;
+    padding:0;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: transparent;
+    order:5;
+    align-self:center;
+}
+#color_materia::-webkit-color-swatch{
+    border-radius: 5px;
+    border: none;
+}
+#color_materia::-moz-color-swatch{
+    border-radius: 5px;
+    border: none;
+}
+
+#agregar_materia{
+    width: 100px;
+    height: 30px;
+    font-family: "OldNewsPaper";
+    font-size: 14px;
+    color: black;
+    border: 2px black solid;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(31, 243, 3);
+    cursor:pointer;
+    order:1;
+    align-self:center;
+}
+
+#agregar_text{
+    font-family: "OldNewsPaper";
+    font-size:25px;
+    order: 6;
+    align-self: center;
+    height: 20px;
+}
+
+#borrar_materia{
+    width: 100px;
+    height: 30px;
+    font-family: "OldNewsPaper";
+    font-size: 14px;
+    color: black;
+    border: 2px black solid;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(255, 61, 61);
+    cursor:pointer;
+    order:2;
+    align-self:center;
+}
+#materia{
+    width: 250px;
+    height: 20px;
+    font-family: "OldNewsPaper";
+    font-size: 12px;
+    border: black 2px solid;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+    background-color: aliceblue;
+    order:4;
+    align-self: center;
+}
+
+#seleccionar_materia{
+    width: 200px;
+    height: 20px;
+    font-family: "OldNewsPaper";
+    font-size: 12px;
+    border: black 2px solid;
+    border-radius: 10px 10px 10px 10px;
+    background-color: aliceblue;
+    order:3;
+    align-self:center;
+}
+
+/*---------------------------------------------------------ANIDADOR---------------------------------------------*/
+
+#info_anidador{
+    height: 50px;
+    background-color: aliceblue;
+    border:black 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contador{
+
+    font-family: "OldNewsPaper";
+    font-size:15px;
+    order: 4;
+    align-self: center;
+
+}
+
+#completadas{
+
+    font-family: "OldNewsPaper";
+    font-size:15px;
+    order: 6;
+    align-self: center;
+    width: 115px;
+
+}
+
+.opciones{
+
+    height: 50px;
+    display: grid;
+    grid-template-columns: 55px 20% 1fr 20% 50px 50px;
+    background-color: whitesmoke;
+    border: 1px black solid;
+
+    transition: opacity 1s ease-in-out;
+    
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    
+    
+}
+
+.tareaText{
+
+order: 2;
+
+}
+
+.color{
+    order:1;
+
+}
+
+.materiaText{
+    order:3;
+    margin: 0 auto;
+    align-self: center;
+    grid-column-start: 4 ;
+    grid-column-end: 5 ;
+
+}
+
+.removed{
+   
+    opacity: 0%;
+   
+}
+
+.transicion{
+   opacity: 100%;
+}
+
+#predeterminada_opcion{
+    color:grey;
+}
+
+.trashCan{
+    order:5;
+    grid-column-start: 6 ;
+    grid-column-end: 7 ;
+    cursor:pointer;
+}
+
+.checkear{
+    order: 4;
+    grid-column-start: 5 ;
+    grid-column-end: 6 ;
+    appearance: none;
+    cursor:pointer;
+    border: 1px solid black;
+    transition: background-color 0.3s ease-in-out;
+}
+.checkear:enabled {
+    background-color: aliceblue;
+    background-image: none;
+  }
+
+
+.checkear:enabled:checked {
+    background-color: green;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+  }
+
+@keyframes aparecer {
+
+    from{
+        transform: translateY(15px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+    
+}
